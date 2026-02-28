@@ -1,0 +1,42 @@
+baseURL: 'https://bibletoon.xyz/'
+languageCode: 'ru-ru'
+title: 'Bibleblog'
+theme: PaperMod
+
+pagination:
+  disableAliases: false
+  pagerSize: 5
+
+params:
+  homeInfoParams:
+    Title: "Библеблог"
+    Content: >
+      Блог где я пишу щитпосты про вещи, о которых мне не с кем поговорить
+  socialIcons:
+    - name: github
+      title: Мой Github
+      url: "https://github.com/Bibletoon"
+    - name: telegram
+      title: Мой telegram
+      url: "https://t.me/bibletoon"
+    - name: rss
+      title: RSS Фид
+      url: "/index.xml"
+
+menu:
+   main:
+      - name: Поиск
+        url: search/
+        weight: 10
+      - name: Тэги
+        url: tags/
+        weight: 20
+      - name: Архив
+        url: archives/
+        weight: 30
+
+outputs:
+   home:
+      - HTML
+      - RSS
+      - JSON
